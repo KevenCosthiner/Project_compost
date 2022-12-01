@@ -17,7 +17,7 @@ data = pd.read_csv('supernatural.csv', sep =';') #importando os dados utilizando
 data
 
 
-#Normalizando os dados utilizando como base a coluna SMILES
+#Normalizando os dados utilizando como base a coluna SMILES.
 SMILES = [] #criando lista vazia
 for i in range (0, 6000):#criando um loop 
     molecula = rdMolStandardize.StandardizeSmiles(data.SMILES[i])
